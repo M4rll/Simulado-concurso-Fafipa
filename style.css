@@ -1,0 +1,112 @@
+/* Configurações Gerais */
+body {
+    font-family: 'Segoe UI', SegoeUI, Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    color: #102a43;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+/* Container do Quiz */
+.quiz-container {
+    background-color: #ffffff;
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    color: #243b53;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #627d98;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* Estilo de cada Pergunta */
+.question-container {
+    background: #f0f4f8;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border-left: 6px solid #1098ad; /* Azul turquesa médico */
+}
+
+.question {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Opções de Resposta */
+.answers label {
+    display: block;
+    background: #ffffff;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: 1px solid #d9e2ec;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.answers label:hover {
+    border-color: #1098ad;
+    background-color: #f0faff;
+}
+
+.answers input[type="radio"] {
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+/* Botão de Finalizar */
+.btn {
+    display: block;
+    width: 100%;
+    background-color: #1098ad;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    background-color: #0c7d8f;
+    box-shadow: 0 4px 12px rgba(16, 152, 173, 0.3);
+}
+
+/* Estilos de Acerto/Erro após finalizar */
+.correct-style {
+    border: 2px solid #27ab83 !important;
+    background-color: #e3f9f2 !important;
+    color: #1a7a5e;
+}
+
+.wrong-style {
+    border: 2px solid #e12d39 !important;
+    background-color: #fff1f2 !important;
+    color: #911119;
+}
+
+/* Resultado Final */
+#results {
+    margin-top: 30px;
+    text-align: center;
+}
